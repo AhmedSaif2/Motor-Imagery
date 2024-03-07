@@ -10,7 +10,6 @@ def predict_movement():
     sample=x_test[idx]
     sample=sample.reshape((1,-1))
     y_pred=model.predict(sample)
-    print(idx)
     print("prediction is: ",y_pred)
     print("test: ",y_test[idx])
     idx+=1
